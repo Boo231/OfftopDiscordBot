@@ -12,8 +12,8 @@ public class ReactionRecivedEvent extends ListenerAdapter {
         e.getChannel().retrieveMessageById(e.getMessageId()).queue();
         Message msg = e.getChannel().retrieveMessageById(e.getMessageId()).complete();
         for (MessageReaction react : msg.getReactions()) {
-            if (react.getReactionEmote().getEmote().getIdLong() == 768253311353880586L) {
-                if (react.getCount() == 2) {
+            if (react.getReactionEmote().getEmote().getIdLong() == 768253311353880586L) {  // ID used emote
+                if (react.getCount() == 2) {  // count emote
                     msg.delete().complete();
                 }
             }

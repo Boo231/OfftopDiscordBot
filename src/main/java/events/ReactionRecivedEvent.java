@@ -1,4 +1,4 @@
-package Events;
+package events;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageReaction;
@@ -11,14 +11,12 @@ public class ReactionRecivedEvent extends ListenerAdapter {
 
         e.getChannel().retrieveMessageById(e.getMessageId()).queue();
         Message msg = e.getChannel().retrieveMessageById(e.getMessageId()).complete();
-        System.out.println(msg.getReactions());
         for (MessageReaction react : msg.getReactions()) {
-            if (react.getReactionEmote().getEmote().getIdLong() == **ChannelID**) {
-                if (react.getCount() == **Number of reactions to delete**) {
+            if (react.getReactionEmote().getEmote().getIdLong() == 768253311353880586L) {
+                if (react.getCount() == 2) {
                     msg.delete().complete();
                 }
             }
         }
     }
 }
-

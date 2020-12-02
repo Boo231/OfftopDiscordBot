@@ -16,5 +16,5 @@ A message about the bot's readiness will be sent there. This message is deleted 
 4) In the" CleanBotMessageEvent " file, specify the necessary delay before deleting the message and the ID of your bot.
 
 
-When creating a bot on the Discord Developer site, don't forget to check the "PRESENCE INTENT" and "SERVER MEMBERS INTENT"boxes.
+When creating a bot on the Discord Developer site, don't forget to check the "PRESENCE INTENT" and "SERVER MEMBERS INTENT" boxes.
 Also grant the bot Administrator-level access or the necessary permissions.

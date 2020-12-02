@@ -1,5 +1,4 @@
 # OfftopDiscordBot
-This bot will help you remove unwanted content from the chat. Just enter N number of responses and the message will be deleted.
 
 A bot that will help you monitor the content on the server and stick to the topic.
 
